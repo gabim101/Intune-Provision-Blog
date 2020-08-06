@@ -1,0 +1,99 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps/$entity",
+    "@odata.type": "#microsoft.graph.win32LobApp",
+    "id": "13a9ef17-3521-4422-bb6c-2bd47638a65a",
+    "displayName": "Chrome Automatic",
+    "description": "OZ-App3",
+    "publisher": "OZ",
+    "largeIcon": null,
+    "createdDateTime": "2020-07-27T12:07:14.760005Z",
+    "lastModifiedDateTime": "2020-07-27T12:07:14.760005Z",
+    "isFeatured": false,
+    "privacyInformationUrl": null,
+    "informationUrl": null,
+    "owner": "",
+    "developer": "OZ",
+    "notes": "",
+    "uploadState": 1,
+    "publishingState": "published",
+    "isAssigned": false,
+    "roleScopeTagIds": [
+        "0"
+    ],
+    "dependentAppCount": 0,
+    "committedContentVersion": "1",
+    "fileName": "Chrome.intunewin",
+    "size": 1064304,
+    "installCommandLine": "Powershell.exe -executionPolicy bypass -file \"./Sample_App_Install.ps1\"",
+    "uninstallCommandLine": "cmd.exe",
+    "applicableArchitectures": "x64",
+    "minimumFreeDiskSpaceInMB": null,
+    "minimumMemoryInMB": null,
+    "minimumNumberOfProcessors": null,
+    "minimumCpuSpeedInMHz": null,
+    "msiInformation": null,
+    "setupFilePath": "Sample_App_Install.ps1",
+    "installLanguage": null,
+    "minimumSupportedWindowsRelease": "1803",
+    "minimumSupportedOperatingSystem": {
+        "v8_0": false,
+        "v8_1": false,
+        "v10_0": false,
+        "v10_1607": false,
+        "v10_1703": false,
+        "v10_1709": false,
+        "v10_1803": true,
+        "v10_1809": false,
+        "v10_1903": false
+    },
+    "detectionRules": [
+        {
+            "type": "#microsoft.graph.win32LobAppFileSystemDetection",
+            "path": "c:\\programdata\\contoso",
+            "fileOrFolderName": "sampleapp.log",
+            "check32BitOn64System": false,
+            "detectionType": "exists",
+            "operator": "notConfigured",
+            "detectionValue": ""
+        }
+    ],
+    "requirementRules": [],
+    "rules": [
+        {
+            "@odata.type": "win32LobAppFileSystemRule",
+            "ruleType": "detection",
+            "path": "c:\\programdata\\contoso",
+            "fileOrFolderName": "sampleapp.log",
+            "check32BitOn64System": false,
+            "operationType": "exists",
+            "operator": "notConfigured",
+            "comparisonValue": ""
+        }
+    ],
+    "installExperience": {
+        "runAsAccount": "system",
+        "deviceRestartBehavior": "basedOnReturnCode"
+    },
+    "returnCodes": [
+        {
+            "returnCode": 0,
+            "type": "success"
+        },
+        {
+            "returnCode": 1707,
+            "type": "success"
+        },
+        {
+            "returnCode": 3010,
+            "type": "softReboot"
+        },
+        {
+            "returnCode": 1641,
+            "type": "hardReboot"
+        },
+        {
+            "returnCode": 1618,
+            "type": "retry"
+        }
+    ]
+}

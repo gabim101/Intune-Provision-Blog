@@ -1,0 +1,99 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps/$entity",
+    "@odata.type": "#microsoft.graph.win32LobApp",
+    "id": "89c4f725-b2ca-4356-8d5c-4438cefa5bda",
+    "displayName": "Putty Automatic",
+    "description": "Putty",
+    "publisher": "The One Who Created Putty",
+    "largeIcon": null,
+    "createdDateTime": "2020-08-05T11:16:13.5407558Z",
+    "lastModifiedDateTime": "2020-08-05T11:16:13.5407558Z",
+    "isFeatured": false,
+    "privacyInformationUrl": null,
+    "informationUrl": null,
+    "owner": "",
+    "developer": "The One Who Created Putty",
+    "notes": "",
+    "uploadState": 1,
+    "publishingState": "published",
+    "isAssigned": false,
+    "roleScopeTagIds": [
+        "0"
+    ],
+    "dependentAppCount": 0,
+    "committedContentVersion": "1",
+    "fileName": "putty.intunewin",
+    "size": 458256,
+    "installCommandLine": "putty.cmd",
+    "uninstallCommandLine": "cmd.exe",
+    "applicableArchitectures": "x86, x64",
+    "minimumFreeDiskSpaceInMB": null,
+    "minimumMemoryInMB": null,
+    "minimumNumberOfProcessors": null,
+    "minimumCpuSpeedInMHz": null,
+    "msiInformation": null,
+    "setupFilePath": "putty.cmd",
+    "installLanguage": null,
+    "minimumSupportedWindowsRelease": "1607",
+    "minimumSupportedOperatingSystem": {
+        "v8_0": false,
+        "v8_1": false,
+        "v10_0": false,
+        "v10_1607": true,
+        "v10_1703": false,
+        "v10_1709": false,
+        "v10_1803": false,
+        "v10_1809": false,
+        "v10_1903": false
+    },
+    "detectionRules": [
+        {
+            "@odata.type": "#microsoft.graph.win32LobAppFileSystemDetection",
+            "path": "%userprofile%\\desktop",
+            "fileOrFolderName": "putty.exe",
+            "check32BitOn64System": false,
+            "detectionType": "exists",
+            "operator": "notConfigured",
+            "detectionValue": null
+        }
+    ],
+    "requirementRules": [],
+    "rules": [
+        {
+            "type": "#microsoft.graph.win32LobAppFileSystemRule",
+            "ruleType": "detection",
+            "path": "%userprofile%\\desktop",
+            "fileOrFolderName": "putty.exe",
+            "check32BitOn64System": false,
+            "operationType": "exists",
+            "operator": "notConfigured",
+            "comparisonValue": null
+        }
+    ],
+    "installExperience": {
+        "runAsAccount": "user",
+        "deviceRestartBehavior": "basedOnReturnCode"
+    },
+    "returnCodes": [
+        {
+            "returnCode": 0,
+            "type": "success"
+        },
+        {
+            "returnCode": 1707,
+            "type": "success"
+        },
+        {
+            "returnCode": 3010,
+            "type": "softReboot"
+        },
+        {
+            "returnCode": 1641,
+            "type": "hardReboot"
+        },
+        {
+            "returnCode": 1618,
+            "type": "retry"
+        }
+    ]
+}

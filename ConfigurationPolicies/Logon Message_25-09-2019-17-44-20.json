@@ -1,0 +1,32 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "c94e7c3f-758a-4b61-8458-61ee9281a7a7",
+    "lastModifiedDateTime":  "2019-07-10T15:25:25.5020477Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2019-07-10T15:25:25.5020477Z",
+    "description":  "",
+    "displayName":  "Logon Message",
+    "version":  1,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Logon Message",
+                            "description":  null,
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn",
+                            "value":  "Intune Provisioning with DevOps ***NOTICE!***"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Logon MSG",
+                            "description":  null,
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn",
+                            "value":  "This Configuration has been automatically uploaded to Intune \n-------------------------------------------------------------------------------------------"
+                        }
+                    ]
+}
