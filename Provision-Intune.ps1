@@ -33,10 +33,10 @@ foreach ($f in $Functions){
 }
 
 #################################
-####### Create win32 apps  ######
+####### Create Token  ###########
 ################################# 
 
-# Test-AuthToken
+
 
 Write-Host "Getting Token"
 $global:authToken = Get-AuthToken -client $($client_id) -secret $($client_secret) -tenant $($tenantId)
@@ -53,7 +53,9 @@ $azureStorageUploadChunkSizeInMb = 6l;
 $sleep = 30
 
 
-
+#################################
+####### Create win32 apps  ######
+################################# 
 
 $apps = @(Get-ChildItem -Path $rootLocation\win32apps -Directory )
 
